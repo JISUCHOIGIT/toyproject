@@ -10,13 +10,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CalendarView;
 
 import com.example.example3.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    ActivityMainBinding binding;
     Toolbar toolbar;
     NavigationView navigationView;
     DrawerLayout drawerLayout;
@@ -67,6 +67,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (item.getItemId()) {
             case R.id.item_info:
                 startActivity(new Intent(this, InformationActivity.class));
+                return true;
+            case R.id.item_business_day:
+                startActivity(new Intent(this, CalenderActivity.class));
                 return true;
         }
 

@@ -6,6 +6,10 @@
         android:title="정보"/>
 
     <item
+        android:id="@+id/item_business_day"
+        android:title="일정"/>
+
+    <item
         android:id="@+id/item_notice"
         android:title="공지사항"/>
 
