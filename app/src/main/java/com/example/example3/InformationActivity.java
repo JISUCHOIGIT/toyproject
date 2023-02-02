@@ -10,21 +10,16 @@ import android.view.Gravity;
 import android.widget.TextView;
 
 import com.example.example3.adapter.ViewPagerAdapter;
-import com.example.example3.databinding.ActivityInformationBinding;
 import com.example.example3.fragment.AFragment;
 import com.example.example3.fragment.BFragment;
 import com.example.example3.fragment.CFragment;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
-import java.util.Arrays;
-import java.util.List;
 
 public class InformationActivity extends AppCompatActivity {
 
-    ActivityInformationBinding binding;
     Fragment aFragment, bFragment, cFragment;
-    ViewPager2 viewPager2;
     ViewPagerAdapter adapter;
 
     String[] str = new String[] { "TAB1", "TAB2", "TAB3"};
